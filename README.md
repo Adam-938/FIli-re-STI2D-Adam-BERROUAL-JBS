@@ -3,11 +3,6 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Filière STI2D - Adam Berroual</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
 </head>
 <body class="font-roboto bg-gray-100">
   <header class="bg-blue-600 text-white p-4">
@@ -128,18 +123,3 @@
       <p>© 2023 Filière STI2D. Tous droits réservés.</p>
       <p>Adam Berroual, 1STI2D B, JBS</p>
       <img alt="Drapeau mixte de l'Algérie et de la Palestine" class="mx-auto mt-4" height="100" src="https://storage.googleapis.com/a1aa/image/q3Gilggmlx0ixr22WyjQvkD35MjlnUhfbRuQBu0vngQ.jpg" width="100"/>
-      <div id="qrcode" class="mt-4"></div>
-    </div>
-  </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const url = window.location.href;
-      const qrcodeContainer = document.getElementById("qrcode");
-      QRCode.toCanvas(qrcodeContainer, url, function (error) {
-        if (error) console.error(error);
-        console.log("QR code generated!");
-      });
-    });
-  </script>
-</body>
-</html>
